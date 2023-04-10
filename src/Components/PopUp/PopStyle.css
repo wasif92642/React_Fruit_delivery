@@ -1,0 +1,15 @@
+.Pop_dev{
+    background-color: rgb(253, 253, 253);
+    width: 30rem;
+    height: 7rem;
+    border: 1px solid #66B032;
+    box-shadow: 0 7px 16px 0 rgba(126, 124, 124, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Pop_dev h1{
+
+    color:#66B032;
+    text-align: center;
+    font-size: 2rem;
+    line-height:4rem;
+}

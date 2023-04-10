@@ -1,0 +1,432 @@
+.wrapper {
+  background-image: none !important;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+.profile_nav {
+  border-bottom: 1px solid green;
+  height: 6rem;
+  float: none;
+  margin: auto;
+}
+
+.profile_nav ul {
+  float: none;
+  text-align: center;
+  padding: 0;
+}
+
+.profile_nav ul li {
+  font-size: 1.5rem;
+}
+
+.profile_nav ul li:hover {
+  background-color: rgba(225, 231, 233, 0.884);
+}
+
+/* ====================================================Start Account Section csss================================= */
+
+#Account_details {
+  background-color: transparent;
+  height: 73vh;
+  float: none;
+  margin: auto;
+  display: block;
+}
+
+#Account_details i {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #66b032;
+}
+
+#Account_details span {
+  margin: 5% 0 0 8%;
+  display: block;
+  border-bottom: 1px solid #fc600a;
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 2rem;
+  font-weight: 600;
+  word-spacing: 5rem;
+  width: 80%;
+}
+
+#Account_details button {
+  border: none;
+  background-color: orange;
+  font-size: 2rem;
+  padding: 1.5rem 4rem 1.5rem 4rem;
+  cursor: pointer;
+
+  box-shadow: 0 7px 16px 0 rgba(117, 114, 114, 0.5),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 40%;
+}
+
+#Account_details button:hover {
+  background-color: #66b032;
+}
+
+#edit_details {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.labels {
+  font-size: 2.5rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+#edit_details input {
+  margin: 2rem 0 0 2rem;
+  padding: 1rem;
+  width: 80%;
+  font-size: 2rem;
+}
+
+#edit_details select {
+  outline: none;
+  border: 1px solid #fc600a;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-left: 2.5rem;
+}
+
+i {
+  cursor: pointer;
+}
+
+/* ====================================================CLose Account Section csss================================= */
+
+/* =============================================== =========== Start Address Section  CSS ======================================*/
+
+#Address_details {
+  height: 73vh;
+  float: none;
+  margin: auto;
+  display: none;
+}
+
+.edit_Address_section {
+  background-color: white;
+  width: 96vw;
+  height: auto;
+  position: absolute;
+  display: none;
+}
+
+.edit_Address_section input {
+  margin: 2rem 0 2rem 0;
+  border: 1px solid orange;
+}
+
+.edit_Address_section select {
+  width: 100%;
+  background-color: white;
+  color: gray;
+  padding: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0 1.5rem 0;
+  border: 1px solid orange;
+}
+.edit_Address_section button {
+  background-color: orange;
+  border: none;
+  padding: 2rem 3rem 2rem 3rem;
+  margin: 2rem 0 0 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#New_save_btn {
+  display: none;
+}
+
+.edit_Address_section button:hover {
+  background-color: #66b032;
+}
+
+.row_2 {
+  margin-top: 5rem;
+}
+
+.row_2 p {
+  text-align: center;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #66b032;
+  font-weight: 600;
+}
+
+#Address_list {
+  list-style-type: disc;
+  width: 30rem;
+  margin-bottom: 2rem;
+}
+
+#Address_list li {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  padding: 1rem;
+}
+#Address_list li button {
+  border: none;
+  background-color: orange;
+  padding: 2rem 2rem 2rem 2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+#Address_list li button:hover {
+  background-color: #66b032;
+}
+
+/* =============================================== =========== Close Address Section  CSS ======================================*/
+
+/* ==================================================Start Order section css ==========================================*/
+
+#Order_details {
+  background-color: #ffffff;
+  height: auto;
+  float: none;
+  margin: auto;
+  display: none;
+
+  box-shadow: 0 7px 16px 0 rgba(117, 114, 114, 0.5),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.order_row {
+  width: 100%;
+  height: auto;
+
+  box-shadow: 0 7px 16px 0 rgba(78, 76, 76, 0.5),
+    0 6px 20px 0 rgba(179, 176, 176, 0.19);
+  margin-top: 1rem;
+}
+
+.dd {
+  display: inline-block;
+  width: 100%;
+}
+
+.dd p {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.order_detail p {
+  color: gray;
+  font-size: 1.8rem;
+  text-align: left;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#Total_grand {
+  text-align: right;
+  font-size: 2.5rem;
+  color: #66b032;
+}
+
+.order_item_dev {
+  margin-top: 1rem;
+  border: none !important;
+
+  box-shadow: 0 7px 16px 0 rgba(216, 213, 213, 0.5),
+    0 6px 20px 0 rgba(179, 176, 176, 0.19);
+}
+
+.item_details {
+  overflow-y: scroll;
+  height: 20rem !important;
+}
+
+figure {
+  padding: 0.2rem;
+  width: 8rem;
+  height: 8rem;
+  display: inline-block;
+}
+
+figcaption {
+  background-color: rgb(197, 189, 189);
+  color: black;
+  font-style: italic;
+  padding: 2px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#item_img {
+  width: 100%;
+}
+
+.order_item_dev p {
+  display: inline;
+  font-size: 1.5rem;
+  color: rgb(77, 76, 76);
+  font-weight: 800;
+}
+
+.description {
+  border: none !important;
+  display: inline;
+  margin-top: 2rem;
+}
+.description p {
+  margin-left: 1.5rem;
+}
+.description p sup {
+  font-size: 1.5rem;
+}
+
+/* ==================================================Close Order section css ==========================================*/
+
+@media only screen and (min-width: 768px) {
+  .profile_nav {
+    border-bottom: 1px solid green;
+    height: 6rem;
+    float: none;
+    margin: auto;
+  }
+
+  .profile_nav ul {
+    float: none;
+    text-align: center;
+  }
+
+  .profile_nav ul li {
+    font-size: 1.5rem;
+  }
+  .profile_nav {
+    border-bottom: 1px solid green;
+    height: 6rem;
+    float: none;
+    margin: auto;
+  }
+
+  .profile_nav ul {
+    float: none;
+    text-align: center;
+  }
+
+  .profile_nav ul li {
+    font-size: 1.5rem;
+  }
+
+  #Account_details button {
+    border: none;
+    background-color: orange;
+    font-size: 2rem;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    cursor: pointer;
+
+    box-shadow: 0 7px 16px 0 rgba(117, 114, 114, 0.5),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0;
+    position: absolute;
+    top: 85%;
+    left: 48%;
+  }
+
+  #edit_details {
+    background-color: white;
+    width: 50%;
+    height: 50rem;
+    position: absolute;
+    left: 25%;
+    top: 12rem;
+    z-index: 1;
+    display: none;
+    box-shadow: 0 7px 16px 0 rgba(117, 114, 114, 0.5),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .labels {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
+
+  #edit_details input {
+    margin: 2rem 0 0 4rem;
+    padding: 1rem;
+    width: 80%;
+    font-size: 2rem;
+  }
+
+  #edit_profile_button {
+    position: absolute;
+    left: 20% !important;
+  }
+
+  #edit_Address_id {
+    background-color: white;
+    width: 40%;
+    height: auto;
+    position: fixed;
+    display: none;
+    left: 45rem;
+    float: none;
+    top: 8rem;
+
+    box-shadow: 0 7px 16px 0 rgba(117, 114, 114, 0.5),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .edit_Address_section input {
+    margin: 2rem 0 0 0;
+    letter-spacing: 0.2rem;
+  }
+  .edit_Address_section button {
+    background-color: orange;
+    border: none;
+    padding: 2rem 3rem 2rem 3rem;
+    margin: 2rem 0 0 2rem;
+    cursor: pointer;
+  }
+
+  #Address_list {
+    list-style-type: disc;
+    width: 30rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+  }
+
+  #Address_list li {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.1rem;
+    padding: 1rem;
+  }
+  #Address_list li button {
+    border: none;
+    background-color: orange;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-left: 1rem;
+    float: right;
+    cursor: pointer;
+  }
+}

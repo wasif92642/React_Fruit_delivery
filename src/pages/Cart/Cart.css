@@ -1,0 +1,218 @@
+.wrapper_cart {
+  /* background-image: url('../../Images/6017056.jpg'); */
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* 
+
+.cart_card {
+    width: 20rem;
+    height: 25rem;
+    color: "blue";
+    background-color: white;
+    border: 2px solid #66B032;
+    display: inline-block;
+    margin-left: 3rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    box-shadow: 0 7px 16px 0 rgba(126, 124, 124, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cart_card p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+#cancel_item{
+    font-size: 3rem;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 14.5rem;
+    margin-top: -1.5rem;
+}
+
+#cancel_item:hover{
+    color:green;
+    cursor: pointer;
+}
+
+
+#cart{
+    height: 100vh;
+    overflow-y: scroll;
+    
+}
+
+.details{
+    background-color: white;
+    height: 50rem;
+    text-align: center;
+}
+
+
+
+#item_del{
+    padding: 1rem;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+    cursor: pointer;
+    background-color: #66B032;
+    border: none;
+
+}
+
+table{
+   
+    padding: 2rem;
+}
+
+table colum{
+    border: 1px solid green;
+    padding: 2rem;
+
+}
+ */
+
+/*  ===================================== new  ================================================== CSS */
+
+.second_row .col-12 {
+  float: none;
+  background-color: white;
+  width: 70vw;
+  height: 54rem;
+  margin: auto;
+  box-shadow: 0 7px 16px 0 rgba(126, 124, 124, 0.5),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow-y: scroll;
+}
+
+.second_row .col-12 .col-4 h1 {
+  font-size: 2rem;
+}
+
+.second_row .col-12 .col-4 h1 i {
+  font-size: 2rem;
+}
+#Add_li {
+  display: none;
+  animation: slideDown 1.5s;
+}
+
+#Add_map {
+  border: "1px solid black";
+  border-radius: 0.5rem;
+  width: auto;
+  height: 10rem;
+  margin: 0 0rem 1rem 0;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+#Add_map:hover {
+  background-color: lightgreen !important;
+  cursor: pointer;
+}
+.second_row .col-12 .col-6 {
+  border-left: 1px solid gray;
+  height: 100%;
+}
+
+#h_h {
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+#p_p {
+  font-size: 2rem;
+  word-spacing: 9rem;
+  margin-left: 2rem;
+}
+
+#Delivery_Charg1 {
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 2rem;
+}
+#Delivery_Charg {
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 4.5rem;
+}
+
+#Address_selection {
+  margin-left: 2rem;
+  background-color: white;
+  border: 0.1rem solid black;
+  color: black;
+}
+
+#Address_selection option {
+  color: black;
+}
+
+.Detail_section {
+  display: inline-block;
+  padding: 2rem;
+}
+
+.Detail_section p {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Item_Price_Section {
+  display: inline-block;
+  margin-left: 7rem;
+}
+
+.Item_Price_Section p {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#lower_add {
+  
+  padding: 1rem;
+  width: auto;
+  background-color: #e2e0e0;
+}
+
+#Place_Order_bt {
+  background-color: #66b032;
+
+  border: none;
+  outline: none;
+}
+
+#Place_Order_bt:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+
+@media only screen and (max-width: 768px) {
+  .second_row .col-12 {
+    float: none;
+    background-color: white;
+    box-shadow: none;
+    width: 100vw;
+    height: auto;
+    margin: auto;
+  }
+}

@@ -1,0 +1,32 @@
+
+.container{
+   background-image: url('./img/3775771.jpg');
+   background-size: cover;
+    width:100vw;
+    height: 100vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.loder_img_div{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: table-row;
+    margin-top: 460px;
+}
+.loder{
+    width: 100px;
+    height: 100px;
+   
+}
+
+.gallery{
+    /* background-color: aqua; */
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    margin-top: 390px;
+    margin-left:820px;
+}

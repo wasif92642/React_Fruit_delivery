@@ -1,0 +1,166 @@
+@keyframes main_text {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1 , 1);
+  }
+
+  50%{
+    transform: scale(1.1 , 1.1);
+  }
+
+  100% {
+    transform: scale(1 , 1);
+  }
+}
+.wrapper-home {
+background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  overflow-x: hidden;
+  transition: all 1s;
+
+}
+
+.wrapper-home::before{
+  content: ""; 
+  background-image: url("../../Images/slide-1.jpg");
+  background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%; 
+  position: absolute;
+  z-index: -1;
+  overflow-x: hidden;
+  transition: all 1s;
+  animation: zoom-in-zoom-out 6s ease infinite;
+}
+.Home_Nav_row {
+  background-color: transparent;
+  animation: fadeIn 1s;
+  position: sticky;
+  top: 0;
+}
+.main_section {
+  text-align: center;
+  padding: 13rem;
+}
+.main_section h1 {
+  animation-name: slideRight;
+  animation-duration: 4s;
+  font-size: 5rem;
+  font-family: "overall";
+  text-align: left;
+
+}
+.main_section h2 {
+  animation-name: slideRight;
+  animation-duration: 4s;
+  color:orange;
+  font-size: 2rem;
+  font-family: "overall";
+  text-align: left;
+}
+/* .main_section h4 {
+  animation-name: slideLeft;
+  animation-duration: 4s;
+  font-size: 3rem;
+  font-family: "overall";
+}
+
+.main_section h5 {
+  animation: fadeIn 2s;
+  font-size: 3rem;
+  font-family: "overall";
+} */
+
+.main_section button {
+  width: 20rem;
+  padding: 2rem;
+  border: none;
+  background-color: #66b032;
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Berkshire Swash";
+  font-weight: 500;
+  animation: hatch 4s;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+  float: left;
+  border-radius: 4rem;
+}
+
+.main_section button:hover {
+  background-color: orange;
+}
+
+#bg_desktop{
+  display: none;
+}
+/* =====================================Section2 about Page ============================== */
+
+@media only screen and (min-width: 768px) {
+  .wrapper-home {
+    background-color: white;
+      width: 100vw;
+      height: 100vh;
+      background-size: cover;
+      overflow-x: hidden;
+      transition: all 1s;
+    
+    }
+  .wrapper-home::before{
+    content: ""; 
+    background-image: url("../../Images/bg-slide-01.jpg");
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    overflow-x: hidden;
+    transition: none ;
+    animation: none;
+  }
+  
+  #bg_desktop{
+    display: block;
+    width: auto;
+    height: 46rem;
+    transition: all 1s;
+    animation: zoom-in-zoom-out 6s ease infinite;
+    float: right;
+    margin-top: -30rem;
+ 
+  }
+
+
+  
+  .h1 {
+    text-align: left;
+  }
+
+  .innerleft {
+    margin-left: 15rem;
+  }
+
+  .slider {
+    text-align: left;
+    margin-left: 30rem;
+  }
+}
+
+
+
