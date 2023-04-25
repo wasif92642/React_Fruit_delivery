@@ -9,6 +9,18 @@
 
 }
 
+
+body{
+  overflow-x: hidden;
+  background-image: url("./Images/about/pngegg6.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-origin: border-box;
+  background-position-x: 100%;
+  background-position-y: 100%;
+}
+
 ul , li , h1 , h2 , p, a{
   font-family: "overall";
 }
@@ -35,8 +47,7 @@ ul , li , h1 , h2 , p, a{
 [class*="col-"] {
     float: left;
     padding: 1rem;
-    border: 0.1rem solid rgb(238, 7, 7);
-
+    /* border: 0.1rem solid rgb(238, 7, 7); */
 }
 
 .row::after {

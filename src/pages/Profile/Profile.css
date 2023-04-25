@@ -1,8 +1,25 @@
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
 .wrapper {
-  background-image: none !important;
+  background-image: url("../../Images/about/pngegg3.png");
   width: 100vw;
   height: 100vh;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right;
 }
 
 .profile_nav {
@@ -123,7 +140,7 @@ i {
 }
 
 .edit_Address_section {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: 96vw;
   height: auto;
   position: absolute;
@@ -164,34 +181,42 @@ i {
 }
 
 .row_2 {
-  margin-top: 5rem;
-}
-
-.row_2 p {
-  text-align: center;
-  font-size: 3rem;
+  text-align: left;
+  font-size: 2rem;
   cursor: pointer;
   color: #66b032;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
+#address_box {
+  width: 100%;
+  height: 15rem;
+  margin-top: 1rem;
+  background-color: white;
+  box-shadow: 0 7px 16px 0 rgba(117, 114, 114, 0.5),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 #Address_list {
-  list-style-type: disc;
-  width: 30rem;
-  margin-bottom: 2rem;
+  list-style-type: none !important;
+  width: 100%;
+  margin-bottom: 5rem;
 }
 
-#Address_list li {
+#Address_list li p {
+  display: inline-block;
   font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 4rem;
-  padding: 1rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 #Address_list li button {
+  float: right;
   border: none;
   background-color: orange;
   padding: 2rem 2rem 2rem 2rem;
   margin-left: 1rem;
+  margin-top: -2rem;
   cursor: pointer;
 }
 
@@ -302,11 +327,38 @@ figcaption {
 /* ==================================================Close Order section css ==========================================*/
 
 @media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-image: none !important;
+
+  }
+
+  .wrapper::before {
+
+    content: "";
+    background-image: url("../../Images/about/pngegg3.png");
+    background-repeat: no-repeat;
+    background-position-y:90%;
+    background-position-x: 90%;
+    background-size: 33%;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    z-index: -1;
+    overflow-x: hidden;
+    transition: all 1s;
+    animation: zoom-in-zoom-out 6s ease infinite;
+  }
+
   .profile_nav {
     border-bottom: 1px solid green;
     height: 6rem;
-    float: none;
-    margin: auto;
+    position: relative;
+    margin: 0;
   }
 
   .profile_nav ul {
@@ -407,25 +459,35 @@ figcaption {
     cursor: pointer;
   }
 
+  #address_box {
+    width: 60%;
+    height: 13rem;
+    margin-top: 1rem;
+
+    background-color: white;
+    box-shadow: 0 7px 16px 0 rgba(117, 114, 114, 0.5),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
   #Address_list {
     list-style-type: disc;
-    width: 30rem;
-    height: 10rem;
-    margin-bottom: 2rem;
-    margin-left: 1.5rem;
+  }
+  #Address_list li {
+    padding: 1rem;
   }
 
-  #Address_list li {
+  #Address_list li p {
+    display: inline-block;
     font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 0.1rem;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
   }
   #Address_list li button {
     border: none;
     background-color: orange;
     padding: 1rem 1rem 1rem 1rem;
     margin-left: 1rem;
+    margin-top: 0;
     float: right;
     cursor: pointer;
   }

@@ -162,13 +162,26 @@ function Cart() {
     const Cart_ref = collection(firedb, `Cart/${currentUser.uid}/Items`);
 
     if (Grand_total == 0) {
-      alert("Your Cart is Empty");
+
+      setPopMsg("Cart is Empty");
+
+      document.getElementById("Popup").style.display = "block";
+
+      const myTimeout = setTimeout(Close_popup, 2000);
     } else if (!values.address) {
-      alert("Address is not selected");
+      setPopMsg("Select Address");
+
+      document.getElementById("Popup").style.display = "block";
+
+      const myTimeout = setTimeout(Close_popup, 2000);
     } else {
       Clear_cart();
       document.getElementById("Place_Order_bt").style.display = "None";
-      alert("Order Place");
+      setPopMsg("Order Place");
+
+      document.getElementById("Popup").style.display = "block";
+
+      const myTimeout = setTimeout(Close_popup, 2000);
 
       let order_uid = generateUid();
 

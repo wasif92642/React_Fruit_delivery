@@ -98,9 +98,7 @@ const Home = () => {
 
                         </button>
                     </Link>
-
-
-                    <img src={background} id="bg_desktop"></img>                    
+                  
                 </div>
 
 

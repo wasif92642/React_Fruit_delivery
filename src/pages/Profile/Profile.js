@@ -254,6 +254,12 @@ function Profile() {
     });
   }, []);
 
+  const roleOrder = ["Pending", "Recived", "Deliver"];
+
+  const Sort_Order = Order_Status.sort((a, b) => {
+    return roleOrder.indexOf(a.Status) - roleOrder.indexOf(b.Status);
+  });
+
   useEffect(() => {
     const or_ref = query(
       collection(firedb, "Order"),
@@ -310,7 +316,7 @@ function Profile() {
         {/* ================================================Account details */}
 
         <div className="col-8" id="Account_details">
-          <div className="col-12">
+          <div className="col-6">
             <span>
               <i class="fa-solid fa-user"></i> {user_data.username}
             </span>
@@ -437,21 +443,33 @@ function Profile() {
           </div>
 
           <div className="col-12 add_addresses">
+            
+         
+            <p className="row_2"
+              onClick={() => {
+                New_Address();
+                set_address_heading("NEW ADDRESS");
+              }}
+            >
+              + ADD NEW ADDRESS
+            </p>
+
             {Read_Address &&
               Read_Address.map((doc) => {
                 return (
                   <>
-                    <div className="col-6">
+                    <div className="col-6" id="address_box">
                       <ol id="Address_list">
                         <li>
-                          {doc.data.Customer_Name}
+                         <p> Name : {doc.data.Customer_Name} </p>
+                    
+                          <p>Address : {doc.data.Address}</p>
                           <br />
-                          {doc.data.Address}
-                          <br />
-                          {doc.data.City} : {doc.data.Location} <br />
-                          {doc.data.Phone}
-                          <br />
-                          <br />
+                          <p>{doc.data.City} : {doc.data.Location}
+                          </p>
+                          <br/>
+                          <p>Phone : {doc.data.Phone}</p>
+                        
                           <button
                             type="button"
                             onClick={() => {
@@ -484,16 +502,6 @@ function Profile() {
               })}
           </div>
 
-          <div className="col-12 row_2">
-            <p
-              onClick={() => {
-                New_Address();
-                set_address_heading("NEW ADDRESS");
-              }}
-            >
-              + ADD NEW ADDRESS
-            </p>
-          </div>
         </div>
 
         {/* ==========================================================Order Details */}
@@ -511,9 +519,15 @@ function Profile() {
                 MY ORDERS
               </h1>
 
-              {Order_Status &&
-                Order_Status.map((doc) => {
+              {Sort_Order &&
+                Sort_Order.map((doc) => {
                   sessionStorage.setItem("O_State", doc.data.Status);
+
+                  const date = doc.data.Order_Time
+                    ? new Date(doc.data.Order_Time.seconds * 1000)
+                    : null;
+                  const dateString = date ? date.toDateString() : null;
+                  const timeString = date ? date.toLocaleTimeString() : null;
 
                   return (
                     <>
@@ -529,7 +543,8 @@ function Profile() {
                             Order : {doc.data.Status}
                           </p>
                           <br />
-                          <p>{Date(doc.data.Order_Time)}</p>
+                          <p>{dateString}</p>
+                          <p>{timeString}</p>
                           <p style={{ color: "black", fontWeight: "600" }}>
                             Delivered to :
                           </p>

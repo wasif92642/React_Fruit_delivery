@@ -114,7 +114,7 @@ background-color: transparent;
 
 @media only screen and (min-width: 768px) {
   .wrapper-home {
-    background-color: white;
+    background-color: transparent;
       width: 100vw;
       height: 100vh;
       background-size: cover;
@@ -122,31 +122,25 @@ background-color: transparent;
       transition: all 1s;
     
     }
-  .wrapper-home::before{
-    content: ""; 
-    background-image: url("../../Images/bg-slide-01.jpg");
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-    background-size: cover;
-    overflow-x: hidden;
-    transition: none ;
-    animation: none;
-  }
-  
-  #bg_desktop{
-    display: block;
-    width: auto;
-    height: 46rem;
-    transition: all 1s;
-    animation: zoom-in-zoom-out 6s ease infinite;
-    float: right;
-    margin-top: -30rem;
- 
-  }
 
-
+    .wrapper-home::before{
+      content: "";
+      background-image: url("../../Images/xyz.png");
+      background-repeat: no-repeat;
+      background-position-y:70%;
+      background-position-x: 50%;
+      background-size: 30%;
+      webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      height: 90%;
+      width: 90%;
+      position: absolute;
+      z-index: -1;
+      overflow-x: hidden;
+      transition: all 1s;
+      animation: zoom-in-zoom-out 6s ease infinite;
+    }
   
   .h1 {
     text-align: left;
