@@ -64,7 +64,7 @@ const Products_page = () => {
     setDoc(doc(firedb, `Cart/${user_id}/Items`, item_id + "deal"), {
       Name: name,
       Price: price,
-      Type: type,
+      Type: "Deal",
       Quantity: quantity,
       Img: imgurl,
  
